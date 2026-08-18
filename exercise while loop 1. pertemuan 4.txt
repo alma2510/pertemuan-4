@@ -1,0 +1,14 @@
+ulang = "Y"
+
+while ulang.upper() == "Y":
+    angka = int(input("Enter any number: "))
+
+    if angka % 2 == 0:
+        print("The number", angka, "is even")
+    else:
+        print("The number", angka, "is odd")
+
+    ulang = input("Do you want to repeat? (YES/NO): ")
+
+print("\nProgram Stops")
+print("Thank you for using my program ^^")

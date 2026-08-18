@@ -1,0 +1,11 @@
+#input max value: 7 (input by user)
+
+a = max_value = int(input("input max value:"))
+
+#kode menurun
+for i in range(a, 0, -1):
+    print(str(i)* i)
+
+#kode menyamping
+for i in range(2, a + 1):
+   print(str(i) * i)

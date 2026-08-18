@@ -1,0 +1,37 @@
+def calculate_average():
+    grades = {
+        "A": 4.00,
+        "A-": 3.75,
+        "B+": 3.50,
+        "B": 3.00,
+        "B-": 2.75,
+        "C+": 2.50,
+        "C": 2.00,
+        "C-": 1.75,
+        "D": 1.50,
+        "E": 1.20
+    }
+
+    total = 0
+    count = 0
+
+    while True:
+        grade = input("Input Grade (type done to finish): ").upper()
+
+        if grade == "DONE":
+            break
+
+        if grade in grades:
+            total += grades[grade]
+            count += 1
+        else:
+            print("Invalid grade!")
+
+    if count > 0:
+        average = total / count
+        print(f"Average Grade: {average:.2f}")
+    else:
+        print("No grade entered.")
+
+
+calculate_average()
