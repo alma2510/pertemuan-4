@@ -1,0 +1,21 @@
+while True:
+    # Input sisi segitiga
+    a = int(input("Enter Side A: "))
+    b = int(input("Enter Side B: "))
+    c = int(input("Enter Side C: "))
+
+    # Menentukan jenis segitiga
+    if a == b == c:
+        print("\nIt is an Equilateral Triangle")
+    elif a == b or a == c or b == c:
+        print("\nIt is an Isosceles Triangle")
+    else:
+        print("\nIt is a Scalene Triangle")
+
+    # Tanya apakah ingin mengulang
+    ulang = input("\nDo you want to repeat? (Y/N): ")
+
+    if ulang.upper() == "N":
+        print("\nProgram Stops")
+        print("Thank you for using my program ^^")
+        break
